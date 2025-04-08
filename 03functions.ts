@@ -1,5 +1,6 @@
-function addTwo(num: number) {
+function addTwo(num: number): number {
   return num + 2;
+  // return "Hello";
 }
 addTwo(2);
 
@@ -12,6 +13,9 @@ function signUp(name: string, email: string, isPaid: boolean) {}
 
 let loginUser = (name: string, email: string, isPaid: boolean = false) => {};
 loginUser("j", "j@j.com");
-// 1:03
+
+function error(errmsg: string): never {
+  throw new Error(errmsg);
+}
 
 export {};
